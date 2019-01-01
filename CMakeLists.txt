@@ -3,4 +3,4 @@ project(ML C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ML main.c support.c)
+add_executable(ML main.c support.c chess.c)

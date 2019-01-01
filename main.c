@@ -1,10 +1,10 @@
 #include <stdio.h>
-
+#include <string.h>
 int count;
 extern void write_extern();
 void test_array();
 void test_enum();
-
+void play();
 enum season{
     spring,
     summer,
@@ -14,11 +14,27 @@ enum season{
 
 int main() {
     //test_typeof();
-    count = 5;
+    //count = 5;
     //write_extern();
     //test_array();
     //test_enum();
+    //char greeting[20] = "Hello World!";
+    //char greeting2[] = "Welcome.";
+    //strcpy(greeting, greeting2);
+    //strcat(greeting, greeting2);
+    //size_t greeting_size = strlen(greeting);
+    //printf("%d\n", greeting_size);
+    //printf("%s\n", greeting);
+    play();
+
     return 0;
+}
+
+void test_pointer(){
+    int *p;
+    p = &count;
+    printf("p address: %p\n", p);
+    printf("test address: %d\n", *p);
 }
 
 void test_typeof(){
